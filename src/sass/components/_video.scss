@@ -1,0 +1,66 @@
+@import 'variables';
+
+//===============================
+//video
+//===============================
+.video {
+  background-color: #f4f3f9;
+  position: relative;
+  height: 407px;
+  width: 100%;
+  @media screen and (min-width: $small-desktop) {
+    height: 472px;
+  }
+  @media screen and (min-width: $desktop) {
+    height: 740px;
+    margin: 120px 0;
+  }
+  &__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    stroke: #42357e;
+    width: 173px;
+    @media screen and (min-width: $tablet) {
+      width: 262px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 412px;
+    }
+  }
+  &__btn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(45, 4, 228, 0.4);
+    backdrop-filter: blur(7.5px);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    transition: background-color 250ms ease-in-out;
+    &:hover,
+    &:focus {
+      background-color: $btn-secondary-2;
+    }
+    @media screen and (min-width: $tablet) {
+      width: 153px;
+      height: 153px;
+    }
+  }
+  &__btn-icon {
+    fill: $primary;
+    width: 25px;
+    height: 25px;
+    transform: translate(5%, 5%);
+    @media screen and (min-width: $tablet) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

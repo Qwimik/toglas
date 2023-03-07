@@ -1,0 +1,53 @@
+@import './components/reset';
+@import './components/variables';
+
+//===============================
+//global
+//===============================
+* {
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  font-family: 'Raleway', sans-serif;
+}
+html {
+  overflow-x: hidden;
+}
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  width: $mobile;
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    padding: 0 32px;
+  }
+  @media screen and (min-width: $small-desktop) {
+    width: $small-desktop;
+  }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+    padding: 0 165px;
+  }
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@import './components/header';
+
+@import './components/hero';
+@import './components/video';
+@import './components/about';
+@import './components/work';
+@import './components/clients';
+@import './components/contacts';
+
+@import './components/footer';

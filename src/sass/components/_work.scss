@@ -1,0 +1,191 @@
+@import 'variables';
+
+//===============================
+//work
+//===============================
+.work {
+  padding: 60px 0;
+  @media screen and (min-width: $tablet) {
+    padding: 80px 0;
+  }
+  @media screen and (min-width: $small-desktop) {
+    padding: 120px 0;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 150px 0 315px;
+  }
+  &__title {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 157.142857%; /* 44px/28 */
+    text-align: center;
+    color: $brand-dark;
+    @media screen and (min-width: $tablet) {
+      font-size: 52px;
+      line-height: 123.076923%; /* 64px/52 */
+    }
+    @media screen and (min-width: $small-desktop) {
+      font-size: 64px;
+      line-height: 125%; /* 80px/64 */
+    }
+    @media screen and (min-width: $desktop) {
+      text-align: left;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 157.142857%; /* 44px/28 */
+    text-align: center;
+    margin-bottom: 60px;
+    @media screen and (min-width: $tablet) {
+      font-size: 52px;
+      line-height: 123.076923%; /* 64px/52 */
+      margin-bottom: 107px;
+    }
+    @media screen and (min-width: $small-desktop) {
+      font-size: 64px;
+      line-height: 125%; /* 80px/64 */
+      margin-bottom: 150px;
+    }
+    @media screen and (min-width: $desktop) {
+      text-align: left;
+      margin-bottom: 160px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    @media screen and (min-width: $tablet) {
+      gap: 0px;
+      row-gap: 80px;
+      column-gap: 20px;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width: $small-desktop) {
+      column-gap: 20px;
+      row-gap: 150px;
+    }
+    @media screen and (min-width: $desktop) {
+      row-gap: 200px;
+      column-gap: 130px;
+    }
+  }
+
+  &__btn {
+    margin-top: 60px;
+    @media screen and (min-width: $tablet) {
+      width: 298px;
+      padding: 24px 97px;
+      margin: 80px auto 0;
+    }
+    @media screen and (min-width: $small-desktop) {
+      margin-top: 144px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-top: 160px;
+      padding: 24px 33px;
+      width: 169px;
+    }
+  }
+}
+
+.work-item {
+  &__link {
+    text-decoration: none;
+    font-family: inherit;
+    color: #181138;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    @media screen and (min-width: $tablet) {
+      height: 287px;
+    }
+    @media screen and (min-width: $small-desktop) {
+      height: 384px;
+    }
+    @media screen and (min-width: $desktop) {
+      height: 600px;
+    }
+  }
+
+  &__text-container {
+    margin-top: 24px;
+    @media screen and (min-width: $desktop) {
+      margin-top: 32px;
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133.333333%; /* 32px/24 */
+    border-bottom: 1px solid #1a181138;
+    @media screen and (min-width: $small-desktop) {
+      font-size: 32px;
+      line-height: 118.75%; /* 38px/32 */
+    }
+  }
+
+  &__text {
+    margin: 10px 0 16px;
+    font-size: 18px;
+    line-height: 155.555556%; /* 28px/18 */
+    @media screen and (min-width: $small-desktop) {
+      margin: 16px 0;
+      font-size: 28px;
+      line-height: 171.428571%; /* 48px/28 */
+    }
+    @media screen and (min-width: $desktop) {
+      margin: 16px 0 23px;
+    }
+  }
+
+  &__subtext {
+    font-size: 18px;
+    line-height: 28px;
+    color: #7d7994;
+    @media screen and (min-width: $small-desktop) {
+      font-size: 24px;
+      line-height: 116.666667%; /* 28px/24 */
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc(50% - 10px);
+    &:nth-child(3) {
+      flex: 1 0 100%;
+    }
+    &:nth-child(3) img {
+      min-height: 600px;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    flex-basis: auto;
+
+    &:nth-child(1) {
+      width: 670px;
+    }
+    &:nth-child(2) {
+      width: 570px;
+    }
+    &:nth-child(3) {
+      flex: 0 0 auto;
+      width: 979px;
+      margin: 0 auto;
+    }
+    &:nth-child(4) {
+      width: 570px;
+      margin-left: auto;
+    }
+    &:nth-child(5) {
+      width: 770px;
+    }
+  }
+}
